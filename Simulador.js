@@ -9,7 +9,7 @@ setInterval(async () => {
   console.log(`📤 Enviando temperatura: ${temp} °C`);
 
   try {
-    const resposta = await axios.post('https://api-temp-zhgg.onrender.com/temperatura', { temperatura: temp });
+    const resposta = await axios.post('https://api-temperatura-msyx.onrender.com/temperatura', { temperatura: temp });
     console.log(`📥 Resposta da API: ${resposta.data.status} - ${resposta.data.mensagem}`);
 
     if (resposta.data.status == 'alerta') {
